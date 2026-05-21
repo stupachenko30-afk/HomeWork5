@@ -22,21 +22,15 @@ public abstract class Employee {
                 this.jobtitle = jobtitle;
         }
 
-        public String getName() {
-            return name;
-        }
-
-        public String getJobtitle() {
-            return jobtitle;
-        }
-
-    @Override
-    public String toString() {
-        return super.toString()
-                + "Name " + name
-                + "Jobtitle " + jobtitle;
+    public String getName() {
+        return name;
     }
-    public abstract String calculateSalary();
+
+    public String getJobtitle() {
+        return jobtitle;
+    }
+
+    public abstract double calculatePay();
 }
 
 
